@@ -1,0 +1,28 @@
+//@version=5
+indicator("Custom Line Drawing", overlay=true)
+           
+specificDay = timestamp(2023, 1, 1)
+        
+drawLine() =>
+	line.new(0 * 86400000 + int(specificDay), 16498.995356801075, 68 * 86400000 + int(specificDay), 19549.24001510092, width=2, color=color.blue, xloc=xloc.bar_time)
+	line.new(32 * 86400000 + int(specificDay), 24255.02134413724, 78 * 86400000 + int(specificDay), 28472.789026939536, width=2, color=color.red, xloc=xloc.bar_time)
+	line.new(68 * 86400000 + int(specificDay), 19549.24001510092, 85 * 86400000 + int(specificDay), 26508.962046989647, width=2, color=color.blue, xloc=xloc.bar_time)
+	line.new(78 * 86400000 + int(specificDay), 28472.789026939536, 103 * 86400000 + int(specificDay), 31001.132195779446, width=2, color=color.red, xloc=xloc.bar_time)
+	line.new(85 * 86400000 + int(specificDay), 26508.962046989647, 156 * 86400000 + int(specificDay), 25350.964103953644, width=2, color=color.blue, xloc=xloc.bar_time)
+	line.new(103 * 86400000 + int(specificDay), 31001.132195779446, 125 * 86400000 + int(specificDay), 29820.88254401902, width=2, color=color.red, xloc=xloc.bar_time)
+	line.new(156 * 86400000 + int(specificDay), 25350.964103953644, 165 * 86400000 + int(specificDay), 24797.541202427936, width=2, color=color.blue, xloc=xloc.bar_time)
+	line.new(125 * 86400000 + int(specificDay), 29820.88254401902, 193 * 86400000 + int(specificDay), 31804.76807399925, width=2, color=color.red, xloc=xloc.bar_time)
+	line.new(165 * 86400000 + int(specificDay), 24797.541202427936, 228 * 86400000 + int(specificDay), 25217.743564769567, width=2, color=color.blue, xloc=xloc.bar_time)
+	line.new(193 * 86400000 + int(specificDay), 31804.76807399925, 200 * 86400000 + int(specificDay), 30417.33292141049, width=2, color=color.red, xloc=xloc.bar_time)
+	line.new(228 * 86400000 + int(specificDay), 25217.743564769567, 253 * 86400000 + int(specificDay), 24901.876589705866, width=2, color=color.blue, xloc=xloc.bar_time)
+	line.new(200 * 86400000 + int(specificDay), 30417.33292141049, 274 * 86400000 + int(specificDay), 28580.51862760262, width=2, color=color.red, xloc=xloc.bar_time)
+	line.new(253 * 86400000 + int(specificDay), 24901.876589705866, 283 * 86400000 + int(specificDay), 26538.366487253, width=2, color=color.blue, xloc=xloc.bar_time)
+	line.new(274 * 86400000 + int(specificDay), 28580.51862760262, 318 * 86400000 + int(specificDay), 37979.77758405176, width=2, color=color.red, xloc=xloc.bar_time)
+	line.new(283 * 86400000 + int(specificDay), 26538.366487253, 325 * 86400000 + int(specificDay), 35632.84428137093, width=2, color=color.blue, xloc=xloc.bar_time)
+	line.new(318 * 86400000 + int(specificDay), 37979.77758405176, 341 * 86400000 + int(specificDay), 44701.11178747589, width=2, color=color.red, xloc=xloc.bar_time)
+	line.new(325 * 86400000 + int(specificDay), 35632.84428137093, 387 * 86400000 + int(specificDay), 38552.7417378765, width=2, color=color.blue, xloc=xloc.bar_time)
+	line.new(341 * 86400000 + int(specificDay), 44701.11178747589, 375 * 86400000 + int(specificDay), 48973.29998031062, width=2, color=color.red, xloc=xloc.bar_time)
+
+// Call the function to draw the line
+drawLine()
+
